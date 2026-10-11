@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL CricPulse | Players & Teams Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">IPL <span>CricPulse</span></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Players</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Inside the IPL Dugout</h1>
+            <p>Exclusive insights, player profiles, and breaking stories from your favorite T20 teams.</p>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main>
+        <!-- Team Filter Buttons -->
+        <section class="filters">
+            <button class="filter-btn active" data-team="all">All Teams</button>
+            <button class="filter-btn" data-team="mi">Mumbai Indians</button>
+            <button class="filter-btn" data-team="csk">Chennai Super Kings</button>
+            <button class="filter-btn" data-team="rcb">Royal Challengers Bengaluru</button>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-grid" id="blogGrid">
+            <!-- Blog Card 1 -->
+            <article class="blog-card" data-team="mi">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <span class="tag mi-tag">Mumbai Indians</span>
+                    <h3>The Rise of MI's New Pace Sensation</h3>
+                    <p class="excerpt">Discover how Mumbai Indians unraveled their latest death-overs specialist from domestic circuits...</p>
+                    <button class="read-more" onclick="openModal('The Rise of MI\'s New Pace Sensation', 'Full article content about Mumbai Indians goes here. Detailed tactical breakdown, stats, and coach quotes.')">Read Article</button>
+                </div>
+            </article>
+
+            <!-- Blog Card 2 -->
+            <article class="blog-card" data-team="csk">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <span class="tag csk-tag">Chennai Super Kings</span>
+                    <h3>Thala's Last Dance: Season Strategy</h3>
+                    <p class="excerpt">An in-depth look at how CSK is structuring its batting lineup around the legendary finisher this year...</p>
+                    <button class="read-more" onclick="openModal('Thala\'s Last Dance: Season Strategy', 'Full article content about Chennai Super Kings goes here. Analyzing team balance, spin dominance at Chepauk, and leadership transitions.')">Read Article</button>
+                </div>
+            </article>
+
+            <!-- Blog Card 3 -->
+            <article class="blog-card" data-team="rcb">
+                <div class="card-img" style="background-image: url('https://unsplash.com');"></div>
+                <div class="card-content">
+                    <span class="tag rcb-tag">RCB</span>
+                    <h3>King Kohli's Masterclass at the Chinnaswamy</h3>
+                    <p class="excerpt">Breaking down the metrics of Virat's latest century and how the RCB top order anchors the chase...</p>
+                    <button class="read-more" onclick="openModal('King Kohli\'s Masterclass at the Chinnaswamy', 'Full article content about Royal Challengers Bengaluru goes here. Breaking down run rates, boundary percentages, and stadium crowd energy.')">Read Article</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Article Modal Popup -->
+    <div class="modal" id="articleModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Article Title</h2>
+            <p id="modalBody">Article content goes here...</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 IPL CricPulse. Designed for Cricket Fans.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
